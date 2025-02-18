@@ -21,7 +21,7 @@ jobs:
 
   build-project:
     name: Build Project 🧱
-    uses: ./.github/workflows/build-project.yaml
+    uses: .github/scripts/Build-Windows.ps1 -Target x64 -CMakeGenerator "Visual Studio 17 2022"
     secrets: inherit
     permissions:
       contents: read
